@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Estuda+ — crie trabalhos investigativos escolares e prepare-se para a apresentação.">
+  <title>Estuda+ | Trabalhos Investigativos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">+</div>
+      <div>
+        <strong>Estuda<span>+</span></strong>
+        <small>Trabalhos Investigativos</small>
+      </div>
+    </div>
+    <div class="status"><span></span> Pronto para estudar</div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">APRENDA • PESQUISE • APRESENTE</span>
+        <h1>Transforme um tema em um <em>trabalho completo.</em></h1>
+        <p>Crie trabalhos investigativos organizados e prepare-se para responder às perguntas durante a apresentação.</p>
+      </div>
+      <div class="hero-badge">
+        <div class="hero-icon">✦</div>
+        <strong>Estuda+</strong>
+        <span>Seu parceiro de estudo</span>
+      </div>
+    </section>
+
+    <section class="workspace">
+      <div class="form-card">
+        <div class="card-heading">
+          <div>
+            <span class="step">01</span>
+            <h2>Crie seu trabalho</h2>
+          </div>
+          <p>Preencha os dados abaixo.</p>
+        </div>
+
+        <form id="workForm">
+          <label for="topic">Tema do trabalho</label>
+          <input id="topic" name="topic" type="text" placeholder="Ex.: A importância da água para a vida" required>
+
+          <div class="two-columns">
+            <div>
+              <label for="pages">Número de páginas</label>
+              <select id="pages" name="pages">
+                <option value="3">3 páginas</option>
+                <option value="5" selected>5 páginas</option>
+                <option value="8">8 páginas</option>
+                <option value="10">10 páginas</option>
+                <option value="15">15 páginas</option>
+                <option value="20">20 páginas</option>
+              </select>
+            </div>
+            <div>
+              <label for="level">Nível de linguagem</label>
+              <select id="level" name="level">
+                <option value="facil">Fácil</option>
+                <option value="medio" selected>Médio</option>
+                <option value="avancado">Avançado</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="description">Orientações adicionais <span>(opcional)</span></label>
+          <textarea id="description" name="description" rows="5" placeholder="Ex.: É para a 9ª classe. Quero dar mais atenção às causas e consequências."></textarea>
+
+          <button class="primary-button" type="submit">
+            <span>Gerar trabalho</span>
+            <b>→</b>
+          </button>
+        </form>
+      </div>
+
+      <aside class="info-card">
+        <span class="step">02</span>
+        <h2>Prepare-se para defender</h2>
+        <p>Depois de criar o trabalho, o Estuda+ poderá gerar perguntas prováveis do professor e respostas para ajudar na preparação.</p>
+
+        <div class="feature">
+          <div>✓</div>
+          <span>Introdução, desenvolvimento e conclusão</span>
+        </div>
+        <div class="feature">
+          <div>✓</div>
+          <span>Objetivos e metodologia</span>
+        </div>
+        <div class="feature">
+          <div>✓</div>
+          <span>Perguntas e respostas para apresentação</span>
+        </div>
+
+        <div class="tip">
+          <strong>Dica</strong>
+          <p>Quanto mais detalhes você colocar nas orientações, mais específico poderá ficar o trabalho.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section id="result" class="result-card hidden">
+      <div class="result-header">
+        <div>
+          <span class="step">03</span>
+          <h2>Pré-visualização</h2>
+        </div>
+        <button id="newWork" class="secondary-button" type="button">Novo trabalho</button>
+      </div>
+      <div id="resultContent"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Estuda+ © 2026</span>
+    <span>Feito para estudantes</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
